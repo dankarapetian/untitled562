@@ -8,19 +8,19 @@ public class Test {
         @Before
         public void setUp()  {
             x = 8;
-            y =2;
+            y = 2;
 
         }
 
         @Before
         public void add(Object Assert) {
-            int result = 13;
-            Assert.equals(result, CalculationUtils.add(x,y));
+            int result = 10;
+            Assert.equals("8 + 2must be equals 10" , result , CalculationUtils.add(x,y));
         }
 
         @Before
         public void sub() {
-            int result = -2;
+            int result = 6;
             Assert.equals(result, CalculationUtils.sub(x,y));
         }
     }
